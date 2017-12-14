@@ -1,0 +1,995 @@
+/*<!-- Demo styles -->*/
+ html, body {
+     position: relative;
+     height: 100%;
+ }
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    !* Center slide text vertically *!
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}*/
+/*第一屏开始*/
+.swiper-slide.one{
+    width: 100%;
+    height: 100%;
+    background: url("../img/onebg.jpg");
+    position: relative;
+    background-size: 100% 100%;
+}
+
+.swiper-slide.one .top{
+    width: 44%;
+    height: 20%;
+    position: absolute;
+    left: 44%;
+    top: 19%;
+}
+.swiper-slide.one .top .img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.one .center{
+    width: 70%;
+    height:62%;
+    position: absolute;
+    left: 0;
+    top: 27%;
+}
+.swiper-slide.one .center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.one .bottom{
+    width: 100%;
+    height: 13%;
+    position: absolute;
+    left: 0;
+    top: 87%;
+    background: #000;
+}
+
+.swiper-slide.one .bottom span{
+    width: 61%;
+    height: 13%;
+    position: absolute;
+    left: 36%;
+    font-size: 5vw;
+    color: rgb(252, 225, 156);
+}
+/*第一屏结束*/
+
+
+/*下箭头开始*/
+.swiper-button-next{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    top: auto;
+    background-image: url("../img/xiaojiantouxiaoxiao.png");
+    animation: run 1s linear infinite;
+    background-size: 100% 54%;
+}
+@keyframes run {
+    from{
+        bottom: 0;
+        opacity: 0;
+    }
+    to{
+        bottom: 5%;
+        opacity: 1;
+    }
+}
+/*下箭头结束*/
+/*音乐开始*/
+#music{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 2%;
+    top: 1%;
+    z-index: 9;
+}
+.musictu{
+    width: 50%;
+    height: 50%;
+    right: 8px;
+    top: 8px;
+    position: absolute;
+    animation: music 2s linear infinite;
+}
+@keyframes music {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(170deg);
+    }
+    75%{
+        transform: rotateZ(260deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+/*音乐结束*/
+
+    .swiper-slide.one .center{
+        width: 100%;
+    }
+    .swiper-slide.one .top img {
+        width: 87%;
+        position: absolute;
+        left: -13%;
+        top: -5%;
+    }
+    .swiper-slide.one .center img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 2%;
+        top: 8%;
+    }
+    .swiper-slide.three .three-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+    .swiper-slide.two .two-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+    .swiper-slide.four .four-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+    .swiper-slide.five .five-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+    .swiper-slide.six .six-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+    .swiper-slide.seven .seven-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 28%;
+    }
+
+
+    .swiper-slide.three .three-bottom .n{
+        width: 100%;
+        position: absolute;
+       bottom: 21%;
+    }
+    .swiper-slide.two .two-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 21%;
+    }
+    .swiper-slide.four .four-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 21%;
+    }
+    .swiper-slide.five .five-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 21%;
+    }
+    .swiper-slide.six .six-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 21%;
+    }
+    .swiper-slide.seven .seven-bottom .n{
+        width: 100%;
+        position: absolute;
+        bottom: 21%;
+    }
+
+
+
+
+
+
+
+
+
+/*第二屏开始*/
+    .swiper-slide.two{
+        background-image: url("../img/twobg.jpg");
+        background-size: 100% 100%;
+        position: relative;
+    }
+.swiper-slide.two .two-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.two .two-top .two-two-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.two .two-top .two-two-top img{
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide.two .two-top .two-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.two .two-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.two .two-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.two .two-center .two-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.two .two-center .two-center-wenzi .two-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.two .two-center .two-center-wenzi .two-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.two .two-center .two-center-wenzi .two-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.two .two-center .two-center-wenzi .two-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.two .two-center .center-xiaowenzi{
+    width: 70%;
+    height: 50%;
+    top: 30%;
+    left: 18%;
+    position: absolute;
+}
+.swiper-slide.two .two-center .center-xiaowenzi span{
+    font-size: 4vw;;
+}
+.swiper-slide.two .two-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.two .two-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.two .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.two .two-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.two .two-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第二屏结束*/
+/*第三屏开始*/
+.swiper-slide.three{
+    background-image: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.three .three-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.three .three-top .three-three-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.three .three-top .three-three-top img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide.three .three-top .three-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.three .three-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.three .three-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.three .three-center .three-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.three .three-center .three-center-wenzi .three-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.three .three-center .three-center-wenzi .three-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.three .three-center .three-center-wenzi .three-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.three .three-center .three-center-wenzi .three-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.three .three-center .center-xiaowenzi{
+    width: 70%;
+    height: 30%;
+    top: 45%;
+    left: 18%;
+    position: absolute;
+}
+.swiper-slide.three .three-center .center-xiaowenzi span{
+    font-size: 4vw;;
+}
+.swiper-slide.three .three-center .three-img{
+    width: 85%;
+    height: 15%;
+    position: absolute;
+    top: 28%;
+    left: 9%;
+}
+.swiper-slide.three .three-center .three-img img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.three .three-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.three .three-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.three .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.three .three-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.three .three-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第三屏结束*/
+/*第四屏开始*/
+.swiper-slide.four{
+    background-image: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.four .four-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.four .four-top .four-four-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.four .four-top .four-four-top img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide.four .four-top .four-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.four .four-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.four .four-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.four .four-center .four-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.four .four-center .four-center-wenzi .four-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.four .four-center .four-center-wenzi .four-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.four .four-center .four-center-wenzi .four-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.four .four-center .four-center-wenzi .four-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.four .four-center .center-xiaowenzi{
+    width: 70%;
+    height: 50%;
+    top: 25%;
+    left: 18%;
+    position: absolute;
+}
+
+.swiper-slide.four .four-center .center-xiaowenzi .zfy{
+     width: 100%;
+     height: 50%;
+ }
+.swiper-slide.four .four-center .center-xiaowenzi .zfy img{
+    width: 46%;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+}
+.swiper-slide.four .four-center .center-xiaowenzi .fxr{
+    width: 100%;
+    height: 50%;
+}
+.swiper-slide.four .four-center .center-xiaowenzi .fxr img{
+    width: 46%;
+    height: 96%;
+    float: left;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.swiper-slide.four .four-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.four .four-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.four .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.four .four-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.four .four-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第四屏结束*/
+
+/*第五屏开始*/
+.swiper-slide.five{
+    background-image: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.swiper-slide.five .five-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.five .five-top .five-five-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.five .five-top .five-five-top img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide.five .five-top .five-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.five .five-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.five .five-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.five .five-center .five-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.five .five-center .five-center-wenzi .five-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.five .five-center .five-center-wenzi .five-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.five .five-center .five-center-wenzi .five-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.five .five-center .five-center-wenzi .five-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.five .five-center .center-xiaowenzi{
+    width: 63%;
+    height: 30%;
+    top: 80%;
+    left: 21%;
+    position: absolute;
+}
+.swiper-slide.five .five-center .center-xiaowenzi span{
+    font-size: 4vw;;
+}
+.div{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*animation: ditu 2s linear 3s both;*/
+}
+/*@keyframes ditu {*/
+    /*0%{*/
+        /*margin-top: 0;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*100%{*/
+        /*margin-top: 50px;*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
+/*.swiper-slide.five .five-center .five-img{
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    top: 28%;
+    left: 15%;
+}
+.swiper-slide.five .five-center .five-img img{
+    width: 100%;
+    height: 100%;
+}*/
+.swiper-slide.five .five-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.five .five-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.five .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.five .five-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.five .five-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第五屏结束*/
+/*第六屏开始*/
+.swiper-slide.six{
+    background-image: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.swiper-slide.six .six-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.six .six-top .six-six-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.six .six-top .six-six-top img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide.six .six-top .six-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.six .six-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.six .six-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.six .six-center .six-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.six .six-center .six-center-wenzi .six-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.six .six-center .six-center-wenzi .six-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.six .six-center .six-center-wenzi .six-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.six .six-center .six-center-wenzi .six-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.six .six-center .center-xiaowenzi{
+    width: 70%;
+    height: 50%;
+    top: 25%;
+    left: 18%;
+    position: absolute;
+    z-index:100;
+}
+.swiper-slide.six .six-center .center-xiaowenzi input{
+    width: 100%;
+    height: 10%;
+    margin-top: 11%;
+    margin-left: -3%;
+    border-radius: 5px;
+}
+.swiper-slide.six .six-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.six .six-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.six .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.six .six-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.six .six-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第六屏结束*/
+/*第七屏开始*/
+.swiper-slide.seven{
+    background-image: url("../img/twobg.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.swiper-slide.seven .seven-top{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+.swiper-slide.seven .seven-top .seven-seven-top{
+    position: absolute;
+    overflow: hidden;
+    width: 42%;
+    height: 80%;
+}
+.swiper-slide.seven .seven-top .seven-seven-top img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.swiper-slide.seven .seven-top .seven-first{
+    width: 30%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.swiper-slide.seven .seven-center {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 9;
+}
+.swiper-slide.seven .seven-center img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide.seven .seven-center .seven-center-wenzi{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    top: 14%;
+    left: 28%;
+
+}
+.swiper-slide.seven .seven-center .seven-center-wenzi .seven-center-wenzi-x{
+    width: 50%;
+    height:100%;
+    position: absolute;
+}
+.swiper-slide.seven .seven-center .seven-center-wenzi .seven-center-wenzi-x .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.seven .seven-center .seven-center-wenzi .seven-center-wenzi-i{
+    width: 50%;
+    height:100%;
+    position: absolute;
+    margin-left: 37%;
+}
+.swiper-slide.seven .seven-center .seven-center-wenzi .seven-center-wenzi-i .beijing{
+    width: 44%;
+    height: 83%;
+    background: #b79743;
+    border-radius: 50%;
+    border: 2px solid;
+    float: left;
+}
+.swiper-slide.seven .seven-center .center-xiaowenzi{
+    width: 70%;
+    height: 50%;
+    top: 30%;
+    left: 18%;
+    position: absolute;
+}
+.swiper-slide.seven .seven-center .center-xiaowenzi span{
+    font-size: 3vw;;
+}
+.swiper-slide.seven .seven-bottom{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:60%;
+}
+.swiper-slide.seven .seven-bottom .o{
+    width: 37%;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+}
+.swiper-slide.seven .n{
+    width: 100%;
+    position: absolute;
+    bottom: 21%;
+}
+.swiper-slide.seven .seven-huaduo{
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    z-index: 11;
+}
+.swiper-slide.seven .seven-huaduo img{
+    width: 100%;
+    height:100%;
+}
+/*第七屏结束*/
